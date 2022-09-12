@@ -1,0 +1,309 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0%;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  color: darkgreen;
+}
+
+h2 {
+  color: darkgreen;
+}
+
+.Reseña {
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  color: darkseagreen;
+  background-color: #eeecec;
+}
+
+p {
+  line-height: 30px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+body {
+  background-image: url("../img/fondo nuevo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+#galeria {
+  min-height: 500px;
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%;
+}
+.reseña2 {
+  margin-right: 50px;
+  margin-top: 50px;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inicio__logo {
+  width: 136px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.inicio {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.titulo {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inicio1 {
+  text-align: center;
+}
+
+.mapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: darkseagreen;
+  background-color: #eeecec;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.contacto button {
+  margin-top: 10px;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.envios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: darkseagreen;
+  background-color: #eeecec;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+h2 {
+  color: darkgreen;
+}
+
+nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: darkseagreen;
+  text-decoration: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.orden {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+#galeria {
+  background-color: rga(195, 35, 88);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (200px)[4];
+      grid-template-columns: repeat(4, 200px);
+  -ms-grid-rows: (200px)[2];
+      grid-template-rows: repeat(2, 200px);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      grid-template-areas: "comedor comedor baño living"
+ "comedor comedor dormitorio dormitorio";
+}
+
+#galeria .tile {
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#galeria .tile a {
+  text-decoration: none;
+}
+
+#galeria .tile .front {
+  color: white;
+  background-color: black;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: top center;
+}
+
+#galeria .tile .back {
+  background-color: #222;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+#galeria .comedor.tile .front {
+  background-image: url("../img/mueble cocina.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#galeria .dormitorio.tile .front {
+  background-image: url(../img/vestidor.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#galeria .baño.tile .front {
+  background-image: url(../img/baño.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#galeria .living.tile .front {
+  background-image: url(../img/living.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.comedor.tile {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: comedor
+}
+
+.baño .tile {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: baño;
+}
+
+.living .tile {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: living;
+}
+
+.dormitorio.tile {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: dormitorio;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-item {
+  width: 100%;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

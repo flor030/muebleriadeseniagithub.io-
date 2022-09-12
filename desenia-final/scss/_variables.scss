@@ -1,0 +1,43 @@
+@mixin envios-contacto {
+    display: flex;
+    flex-direction: column;
+    color: darkseagreen;
+    background-color: rgb(238, 236, 236);;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    padding: 20px;
+    position: relative;
+}
+.contacto {
+    @include envios-contacto
+}
+.envios {
+    @include envios-contacto
+}
+/*variables*/
+
+$verdegris: darkslategrey;
+$azul: aliceblue;
+$verdeclaro: darkseagreen;
+$verdeoscuro: darkgreen;
+$blanco: white;
+$negro: black,
+
+/*map*/
+
+$margin (
+ $sub-img-right: 50px,
+ $sub-img-top: 50px,
+ $main-top: 20px,
+)
+
+$medidas (
+$logo-width: 136px,
+$inicio-width: 100%,
+)
+
+$size (
+$font-rese: 20px,
+$font-h2: 26px,
+)
